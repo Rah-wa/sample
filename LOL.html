@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #nav {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            margin-bottom: 1%;
+            background-color: blueviolet;
+            
+        }
+
+        #text-image,
+        #links {
+            min-height: 40px;
+        }
+
+        #text-image {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+
+        #links a {
+
+            text-decoration: none;
+            align-items: center;
+            margin-right: 20px;
+            background-color: azure;
+            padding: 10px;
+            width: 90px;
+            border-radius: 12px;
+
+        }
+
+        #links a:hover {
+            background-color: red;
+        }
+
+        #links {
+            display: inline-block;
+            padding-top: 20px;
+        }
+
+        #content {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            gap: 10px;
+        }
+
+        #one,
+        #two,
+        #three {
+            min-height: 60vh;
+            background-color: aquamarine;
+        }
+
+        #two {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+
+        #two * {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="nav">
+        <div id="text-image">
+            <img src="./lecture one/img/humberger.png" width="40px" height="40px" />
+            <p> this is the message </p>
+        </div>
+
+        <div id="links">
+            <a href="home.html"> Home </a>
+            <a href="contact.html"> Contact </a>
+            <a href="about.html"> About us </a>
+            <a href="https://www.google.com/"> Google</a>
+        </div>
+
+    </div>
+
+    <div id="content">
+
+        <div id="one">
+            <p> item one </p>
+        </div>
+
+        <div id="two">
+            <p> item two </p>
+            <p> item two </p>
+            <p> item two </p>
+            <p> item two </p>
+        </div>
+
+        <div id="three">
+            <p> item three </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

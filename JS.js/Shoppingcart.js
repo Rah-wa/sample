@@ -1,0 +1,11 @@
+let itemPrice = 70;  
+let itemQuantity = 4;      
+let itemDiscount = 10; 
+let threshold = 10;       
+let itemTaxRate = 15;                   
+let subtotal = itemPrice * itemQuantity;
+let discount = 0;
+discount = subtotal>10?subtotal * (itemDiscount/100):0;
+let itemTax = subtotal * (itemTaxRate/100);
+let Total = subtotal - discount +itemTax;
+console.log(`original price: ${itemPrice}`);

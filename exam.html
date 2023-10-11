@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Resturant</title>
+    <style>
+        #wrapper {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto 1fr auto;
+            gap: 20px;
+            background-color: rgb(201, 191, 191);
+            min-height: 100vh;
+
+        }
+
+        #nav {
+            grid-column: 2/4;
+            grid-row: 1/2;
+        }
+
+        #header {
+            grid-column: span 2;
+            background-color: rgb(14, 14, 126);
+            padding: 10px;
+
+        }
+
+        @media(min-width:768px) {
+            #nav ul {
+                display: flex;
+                flex-direction: row;
+                
+            }
+        }
+
+        @media(min-width:768px) {
+            #nav ul {
+                display: flex;
+                flex-direction: column;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+            }
+        }
+
+        #content {
+            grid-column: 2/4;
+            grid-row: 2/4;
+        }
+
+        #sidebar {
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+
+        #footer {
+            grid-column: 1/4;
+            grid-row: 4/4;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="wrapper">
+        <nav id="nav">
+            <ul type="none"></ul>
+        </nav>
+        <li>home</li>
+        <li>who we are</li>
+        <li>menu</li>
+        <li>Desserts</li>
+        <li>More information</li>
+        <li>usernames</li>
+        <li>password</li>
+        <li>login</li>
+        <section id="header">
+            <h1>Bee Resturant, home, who we are, menu</h1>/section>
+            <section id="content">
+                <p>tucked away in the heart of city.</p>
+            </section>
+            <section id="sidebar">Desserts, more information, usernames, password, login</section>
+            <footer id="footer"></footer>
+            &copy; all rights reserved.
+    </main>
+
+
+    </main>
+
+</body>
+
+</html>

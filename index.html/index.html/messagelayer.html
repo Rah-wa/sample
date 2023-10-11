@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Main container styles */
+        .whatsapp-background {
+            position: absolute;
+            top: 10px;
+            left: 2px;
+            width: 50%;
+            height: 50%;
+            background-color: #128C7E; /* WhatsApp's background color */
+            z-index: 1;
+        }
+
+        .whatsapp-messaging {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 80%;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            z-index: 2;
+            background-color: antiquewhite;
+        }
+
+        /* Chat list styles */
+        .chat-list {
+            background-color: #fff; /* White background for the chat list */
+            border-right: 1px solid #9790908c;
+            overflow-y: auto;
+            left: 20px;
+        }
+
+        .chat-item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+    40        cursor: pointer;
+        }
+
+        .chat-item.selected {
+            background-color: #E2E2E2;
+        }
+
+        /* Message area styles */
+        .message-area {
+            background-color: #fff; /* White background for the message area */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            overflow-y: auto;
+        }
+
+        .message {
+            background-color: #DCF8C6;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+            align-self: flex-start;
+        }
+
+        .user-message {
+            background-color: #E2E2E2;
+            align-self: flex-end;
+        }
+
+        /* Typing area styles */
+        .typing-area {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+        }
+
+        .message-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .send-button {
+            background-color: #25D366;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="whatsapp-background"></div>
+    <div class="whatsapp-messaging">
+        <div class="chat-list">
+            <div class="chat-item selected">Friend 1</div>
+            <div class="chat-item">Friend 2</div>
+        </div>
+        <div class="message-area">
+            <div class="message user-message">
+                <div class="user">You:</div>
+                <div class="text">Hi there!</div>
+            </div>
+            <div class="message">
+                <div class="user">Friend 1:</div>
+                <div class="text">Hello!</div>
+            </div>
+            <!-- More messages go here -->
+            <div class="typing-area">
+                <input type="text" class="message-input" placeholder="Type a message...">
+                <button class="send-button">&#9658;</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

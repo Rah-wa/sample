@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web</title>
+    <style>
+        #wrapper {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+            gap: 3px;
+        }
+        #nav {
+            grid-column: 2/6;
+            grid-row: 1/2;
+        }
+        #header {
+            grid-area: 1/2;
+            grid-row: 1/2;
+        }
+
+        @media(min-width:768px) {
+            #nav ul {
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media(min-width:768px) {
+                #nav ul {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        #content {
+            grid-column: 2/6;
+            grid-row: 2/6;
+        }
+
+        #sidebar {
+            grid-column: 1/2;
+            grid-row: 2/6;
+        }
+
+        #footer {
+            grid-column: 1/6;
+            grid-row: 6/7;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="wrapper">
+        <nav id="nav">
+            <ul type="none"></ul>
+            <ul>
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <section>
+                    <h1>Responsive Web</h1>
+                </section>
+                <section>
+                    <p>This is my first Webpage. <img src=""</p>
+                </section>
+                <section>
+                    <p>
+                        Responsive web design, also called RWD design, describes a modern web design approach that
+                        allows websites and pages to render (or display) on all devices and screen sizes by
+                        automatically adapting to the screen, whether it’s a desktop, laptop, tablet, smartphone, or
+                        even a smart TV!
+                    </p>
+                </section>
+                <footer>
+                    &copy; All rights reserved.
+                </footer>
+            </ul>
+        </nav>
+    </main>
+
+</body>
+
+</html>

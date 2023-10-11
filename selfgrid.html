@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            margin : 0px;
+            padding:0%;
+        }
+     #nav {
+        display: grid;
+        grid-template-columns: 1fr,3f;
+        grid-gap: 10px;
+        margin-bottom: 1px;
+        background-color: blue;
+     } 
+     #one,
+        #two,
+        #three {
+            min-height: 60vh;
+            background-color: aquamarine;
+        }
+     #text-image,
+     #links {
+        min-height: 40px;
+     }
+     #text-image {
+        display: grid;
+        grid-template-columns:1fr 3fr;
+     }
+     #content {
+        display: grid;
+        grid-template-columns: 1fr, 3fr, 1fr;
+        gap: 10px;
+        padding: 10px;
+     } 
+     #one {
+        background-color: blueviolet;
+     } 
+     #two {
+        background-color: blanchedalmond;
+    
+     }
+     #three {
+        background-color: brown;
+     }
+    </style>
+        
+        
+      
+    </style>
+</head>
+
+</style>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="text-image"></div>
+    <div id="links"></div>
+    <div id =nav></div>
+
+    <div id =content>
+        <p>item one</p>
+        <p>item two</p>
+        <p>item three</p>
+    </div> 
+
+</body>
+</html>

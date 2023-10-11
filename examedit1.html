@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #content {
+            display: flex;
+            justify-content:start;
+            min-height: 10vh;
+            background-color: rgb(102, 108, 193);
+            justify-content: start;
+            gap: 40px;
+            padding-left: 0%;
+        }
+
+        img{
+            width: 30px;
+            height: 40px;
+        }
+
+        #nav1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-size: 30px;
+            color: white;
+        }
+
+        #nav2{
+            display: flex;
+            width: 70%;
+            justify-content:center;
+            align-items: center;
+        }
+
+        #main{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 30px;
+            background-color: aquamarine;
+            padding-top: 30px;
+            padding-left: 20px;
+
+            padding-right: 20px;
+        }
+
+        #one{
+            background-color: blue;
+            min-height: 50vh;
+        }
+
+        #two{
+            background-color: rgb(54, 54, 70);
+            min-height: 50vh;
+            width: 50%;
+        }
+
+
+        #three,#one{
+            background-color: rgb(167, 129, 144);
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+            width: 24.5%;
+            padding-left: 20px;
+            gap: 5px;
+        }
+
+        input,label{
+            width: 100px;
+            background-color: aliceblue;
+        }
+
+        button{
+            width: 100px;
+            border-radius: 12px;
+        }
+
+        a{
+            background-color: aliceblue;
+            margin-right: 12px;
+            width: 100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="nav1">
+            <img src="./lecture one/img/humberger.png"/>
+            <p>Bee Resturant</p>
+        </div>
+        <div id="nav2">
+            <a> Home </a>
+            <a> Who we are </a>
+            <a> Menu </a>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="one">
+            <label>Username *</label>
+            <input />
+            <label>Password *</label>
+            <input />
+            <button> login </button>
+        </div>
+        <div id="two">
+            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be
+                used
+                as a placeholder before final copy is available</p>
+            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the
+                visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be
+                used
+                as a placeholder before final copy is available</p>
+        </div>
+
+        <div id="three">
+            <label>Username *</label>
+            <input />
+            <label>Password *</label>
+            <input />
+            <button> login </button>
+        </div>
+    </div>
+</body>
+
+</html>

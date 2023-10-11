@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(123, 123, 186);
+        }
+
+        #content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 20px;
+            padding-left: 70px;
+            padding-right: 1px;
+            background-color: rgb(223, 219, 215);
+            padding-top: 30px;
+        }
+        
+        @media(min-width:768px) {
+            
+        }
+            #nav ul {
+                display: flex;
+                flex-direction: row;
+            }
+
+            @media(min-width:768px) {
+                #nav ul {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+        #one,
+        #two,
+        #three {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            min-width: 200px;
+            min-height: 60vh;
+            padding-top: 6%;
+            padding-left: 3%;
+        }
+
+        #one {
+            background-color: rgb(151, 154, 156);
+        }
+
+        #two {
+            background-color: rgb(234, 236, 237);
+        }
+
+        #three {
+            background-color: rgb(151, 154, 156);
+        }
+
+        #one,
+        #three {
+            margin-right: 60px;
+            min-height: 80vh;
+            color: rgb(53, 53, 126);
+        }
+
+        #three {
+            padding-right: 20px;
+        }
+
+        #img {
+            display: flex;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            gap: 20px;
+            font-size: 30px;
+            color: white;
+        }
+
+        img {
+            width: 80px;
+            min-height: 30px;
+            background-position: center;
+        }
+
+        #nav1 {
+            display: flex;
+            justify-content: start;
+            width: 50%;
+            margin-top: 1%;
+            flex-wrap: wrap;
+            gap: 8px;
+            color: rgb(43, 43, 182);
+            text-decoration: double;
+        }
+
+        a {
+            background-color: aliceblue;
+            padding: 10px;
+            width: 80px;
+            margin-bottom: 10px;
+            height: 25px;
+            align-items: center;
+        }
+
+        #one p {
+            background-color: aliceblue;
+            height: 30px;
+            width: 100px;
+            padding-left: 10px;
+            padding-top: 9px;
+            border: 2px solid rgb(245, 239, 239);
+        }
+
+        label,
+        input {
+            width: 200px;
+            background-color: azure;
+            padding-left: 12px;
+            height: 30px;
+        }
+
+        button {
+            border-radius: 12px;
+            height: 30px;
+        }
+
+        input {
+            outline: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+
+            <div id="img">
+                <img src="honey bee image.jpg"/>
+                <p>
+                    Bee Resturant
+                </p>
+            </div>
+
+
+            <div id="nav1">
+                <a>Home</a>
+                <a>Who we are</a>
+                <a>Menu</a>
+            </div>
+
+        </div>
+
+        <div id="content">
+            <div id="one">
+                <p>Desserts</p>
+                <p>More info</p>
+            </div>
+            <div id="two">
+                <p>At Bee Restaurant, we serve traditional Tigrayan cuisine using only the freshest, high quality, and
+                    authentic ingredients.Bee resturant opened its doors in November of 2007, and quickly rose in both
+                    popularity and prestige, winning awards and recognition from local and national publications alike.
+                    Over a decade later, Bee Tigrayan Restaurant has grown to become one of New York’s favorite Tigrayan
+                    restaurants and a staple of the Tigrayan-American community of New York.</p>
+                <p>Situated within the vibrant and colorful neighborhood of Uptown, Bee resturant serves New York
+                    residents and visitors daily, allowing guests to experience Tigrayan hospitality and a whole lot of
+                    flavor.</p>
+            </div>
+            <div id="three">
+
+                <label>Username *</label>
+                <br />
+                <input />
+                <br />
+                <label>Password *</label>
+                <br />
+                <input />
+                <br />
+                <button> login </button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

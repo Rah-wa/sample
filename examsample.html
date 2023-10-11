@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  body {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* 1 column for navigation, 3 columns for main content */
+    grid-template-rows: auto 1fr auto; /* Header, main, footer */
+    gap: 20px; /* Adjust the gap as needed */
+    min-height: 100vh; /* Ensure the layout covers the entire viewport height */
+  }
+  
+  header {
+    grid-column: span 2; /* Header spans both columns */
+    background-color: #333; /* Header background color */
+    color: #fff; /* Header text color */
+    padding: 10px;
+  }
+  
+  nav {
+    /* Your navigation menu styles here */
+  }
+  
+  main {
+    /* Main content styles here */
+  }
+  
+  footer {
+    grid-column: span 2; /* Footer spans both columns */
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 10px;
+  }
+  
+  /* Media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    body {
+      grid-template-columns: 1fr; /* 1 column for mobile devices */
+      grid-template-rows: auto 1fr auto; /* Header, main, footer */
+    }
+  
+    nav {
+      /* Adjust navigation menu styles for mobile devices */
+      display: block; /* Display as block or vertically */
+      /* Add other mobile-specific styles as needed */
+    }
+  }
+  
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Navigation menu items go here -->
+    </nav>
+  </header>
+  <main>
+    <!-- Main content goes here -->
+  </main>
+  <footer>
+    <!-- Footer content goes here -->
+  </footer>
+</body>
+</html>
+
